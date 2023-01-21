@@ -1,0 +1,18 @@
+<div class="content">
+  <a class="btn btn-secondary" routerLink="/products">Back To List </a>
+  <br>
+  <div class="content-deatils">
+    <div class="card imag">
+      <img [src]="product?.image" alt="">
+    </div>
+    <div class="card details">
+      <strong>Title</strong>
+      <p>{{product?.title}}</p>
+      <strong>Price</strong>
+      <p>{{product?.price}}</p>
+      <strong>Description</strong>
+      <p>{{product?.description}}</p>
+    </div>
+  </div>
+
+</div>

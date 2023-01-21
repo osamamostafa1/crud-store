@@ -1,0 +1,28 @@
+<div class="content">
+  <div class="content-actions">
+    <a class="btn btn-secondary" routerLink="/">Back To Home </a>
+    <a class="btn btn-success" routerLink="/products/add">Add Product </a>
+  </div>
+
+  <br>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Price</th>
+        <th scope="col">Category</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <th scope="row">{{product?.title}}</th>
+        <td>{{product?.price}}</td>
+        <td>{{product?.category}}</td>
+        <td><a class="btn btn-warning" [routerLink]="'/products/details/'+product.id">Details</a></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>

@@ -1,0 +1,19 @@
+.imag {
+  width: 200px;
+  padding: 5px;
+}
+
+img {
+  width: 100%;
+}
+
+.content-deatils {
+  display: flex;
+  margin-top: 20px;
+}
+
+.content-deatils .details {
+  padding: 5px;
+  flex-grow: 1;
+  margin-left: 5px;
+}
